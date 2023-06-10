@@ -1,5 +1,5 @@
 # nginx_webserver_image
 
 ```bash
-docker pull ghcr.io/deets-pro/nginx_webserver_image:latest
+docker pull ghcr.io/deets-pro/docker_nginx_webserver_image:latest
 ```
