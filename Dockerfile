@@ -2,6 +2,7 @@ FROM nginx:stable-alpine
 
 # ADD Custom Config
 ADD nginx.conf /etc/nginx/nginx.conf
+ADD default.conf /etc/nginx/conf.d/default.conf
 
 # Make Directory - Workspace
 RUN mkdir -p /var/www/html
