@@ -8,9 +8,9 @@ ADD default.conf /etc/nginx/conf.d/default.conf
 RUN mkdir -p /var/www/html
 
 # ADD and set Group
-RUN addgroup -g 1000 laravel && adduser -G laravel -g laravel -s /bin/sh -D laravel
+RUN addgroup -g 1000 www && adduser -G www -g www -s /bin/sh -D www
 
 RUN chmod 777 /var/www/html
 
 # Set Group to Workspace
-RUN chown laravel:laravel /var/www/html
+RUN chown www:www /var/www/html
